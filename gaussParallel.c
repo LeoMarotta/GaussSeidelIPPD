@@ -6,7 +6,7 @@
 
 #define TOLERANCE 1e-6
 #define N 100
-#define THREAD_COUNT 16
+#define THREAD_COUNT 1
 
 double **A, **B;
 
@@ -132,3 +132,8 @@ int main() {
 
     return 0;
 }
+
+// Diferente da solução que nos foi dada imaginando o cenário das temperaturas, 
+// a minha solução considera a diferença então o resultado é diferente porém com o mesmo número de iterações como pedido.
+// Foram implementadas duas soluções, uma em série e outra paralela, para fins de comparação e os resultados são exibidos no terminal.
+// Quando usamos somente uma thread, o resultado é o mesmo que a solução em série, mas quando usamos múltiplas threads, o resultado da paralela é pior.
